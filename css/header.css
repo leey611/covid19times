@@ -1,0 +1,122 @@
+body header {
+  height: 44px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body header #toggle-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 18px;
+  height: 14px;
+  flex-direction: column;
+  cursor: pointer;
+}
+body header #toggle-menu .bar {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+}
+body header #menu {
+  position: fixed;
+  background-color: white;
+  display: none;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 15px 20px;
+  -webkit-box-shadow: 2px 2px 2px -2px gray;
+  -moz-box-shadow: 2px 2px 2px -2px gray;
+  box-shadow: 2px 2px 3px -2px gray;
+}
+body header #menu button {
+  float: right;
+  display: none;
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  margin-top: -15px;
+}
+body header #menu li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+body header #menu.showMenu {
+  visibility: visible;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+body header img {
+  display: block;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+body header #searchBox {
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  overflow: auto;
+  -webkit-box-shadow: 0 2px 2px -2px black;
+  -moz-box-shadow: 0 2px 2px -2px black;
+  box-shadow: 0 2px 2px -2px black;
+}
+body header #searchBox input, body header #searchBox button {
+  font-size: 1rem;
+}
+body header #searchBox input {
+  border: none;
+  border-bottom: 2px solid gray;
+}
+body header #searchBox input:focus {
+  outline: none;
+}
+body header #searchBox #searchResult {
+  width: 100%;
+  text-align: left;
+}
+body header #searchBox #searchResult article {
+  padding-top: 12px;
+}
+body header #searchBox #searchResult article h3 {
+  font-size: 14px;
+  line-height: 1.2;
+}
+body header #searchBox #searchResult article div {
+  font-size: 12px;
+  font-family: Georgia;
+}
+body header #searchBox button {
+  border: none;
+  background-color: #097bbd;
+  color: white;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+body header #searchBox.showSearch {
+  visibility: visible;
+}
+
+@media all and (min-width: 768px) {
+  body header #menu {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>The COVID-19 Times</title>
+  </head>
+  <body>
+    <div id="loadingIcon">
+      <img src="assets/covid.svg" />
+    </div>
+    <div class="outer">
+      <header>
+        <div id="toggle-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div id="menu">
+          <button id="closeBtn">&times;</button>
+          <ul>
+            <li><a href="section/world.html">World</a></li>
+            <li><a href="section/us.html">U.S</a></li>
+            <li><a href="section/business.html">Business</a></li>
+            <li><a href="section/technology.html">Tech</a></li>
+            <li><a href="section/arts.html">Arts</a></li>
+            <li><a href="section/sports.html">Sports</a></li>
+            <li><a href="section/education.html">Education</a></li>
+            <li><a href="section/health.html">Health</a></li>
+            <li><a href="section/style.html">Style</a></li>
+            <li><a href="section/travel.html">Travel</a></li>
+          </ul>
+        </div>
+        <h1><a href="index.html">The COVID-19 Times</a></h1>
+        <img id="searchIcon" src="assets/search.svg" />
+        <div id="searchBox">
+          <div>
+            <form>
+              <input
+                type="text"
+                id="searchInput"
+                name="fname"
+                size="20"
+                placeholder="Search for..."
+              />
+              <button id="submitInput">GO</button>
+            </form>
+            <div id="searchResult"></div>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><img src="assets/covid.svg" /></a>
+          </li>
+          <li><a href="section/world.html">World</a></li>
+          <li><a href="section/us.html">U.S</a></li>
+          <li><a href="section/business.html">Business</a></li>
+          <li><a href="section/technology.html">Tech</a></li>
+          <li><a href="section/arts.html">Arts</a></li>
+          <li><a href="section/sports.html">Sports</a></li>
+          <li><a href="section/education.html">Education</a></li>
+          <li><a href="section/health.html">Health</a></li>
+          <li><a href="section/style.html">Style</a></li>
+          <li><a href="section/travel.html">Travel</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <div id="news">
+          <div id="news-col-left"></div>
+          <div id="news-col-middle"></div>
+          <div id="news-col-right"></div>
+        </div>
+      </section>
+
+      <section id="latest-section">
+        <div>
+          <div class="section-title">Latest</div>
+          <div id="latest-content">
+            <div id="latest"></div>
+            <div class="popular-col">
+              <div class="section-title">Most Popular</div>
+              <div id="populars"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="threeColumns">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="toggle.js"></script>
+  </body>
+</html>

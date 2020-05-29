@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/section.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+
+    <title>The COVID-19 Times</title>
+  </head>
+  <body>
+    <div class="outer">
+      <header>
+        <div id="toggle-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div id="menu">
+          <button id="closeBtn">&times;</button>
+          <ul>
+            <li><a href="world.html">World</a></li>
+            <li><a href="us.html">U.S</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="technology.html">Tech</a></li>
+            <li><a href="arts.html">Arts</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="style.html">Style</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </ul>
+        </div>
+        <h1><a href="../index.html">The COVID-19 Times</a></h1>
+        <img id="searchIcon" src="../assets/search.svg" />
+        <div id="searchBox">
+          <div>
+            <form>
+              <input
+                type="text"
+                id="searchInput"
+                name="fname"
+                size="20"
+                placeholder="Search for..."
+              />
+              <button id="submitInput">GO</button>
+            </form>
+            <div id="searchResult"></div>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"><img src="../assets/covid.svg" /></a>
+          </li>
+          <li><a href="world.html">World</a></li>
+          <li><a href="us.html">U.S</a></li>
+          <li><a href="business.html">Business</a></li>
+          <li><a href="technology.html">Tech</a></li>
+          <li><a href="arts.html">Arts</a></li>
+          <li><a href="politics.html">Sports</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="health.html">Health</a></li>
+          <li><a href="style.html">Style</a></li>
+          <li><a href="travel.html">Travel</a></li>
+        </ul>
+      </nav>
+
+      <section id="sectionNews"></section>
+    </div>
+    <script type="text/javascript" src="../config.js"></script>
+    <script src="../section.js"></script>
+    <script src="../toggle.js"></script>
+    <script>
+      getSectionNews('Sports');
+    </script>
+  </body>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bottomOfPage = document.body.scrollHeight;
+      const scrollPosition = window.scrollY + window.innerHeight;
+      if (scrollPosition >= bottomOfPage) getSectionNews('Technology');
+    });
+
+    window.addEventListener('scroll', () => {
+      if (scrollY > 100) {
+        document.querySelector('nav').classList.add('fixednav');
+      } else {
+        document.querySelector('nav').classList.remove('fixednav');
+      }
+    });
+  </script>
+</html>
