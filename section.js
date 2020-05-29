@@ -1,5 +1,5 @@
 const sectionNews = document.getElementById('sectionNews');
-const apiKey = config.API_KEY;
+const apiKey = 'tVyWTu6Q0fSFXOlkmujYm8DRdJLtIZtV';
 // const apiKey = 'tVyWTu6Q0fSFXOlkmujYm8DRdJLtIZtV';
 
 const insertArticlesToSection = (articles) => {

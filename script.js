@@ -1,4 +1,4 @@
-const apiKey = config.API_KEY;
+const apiKey = 'tVyWTu6Q0fSFXOlkmujYm8DRdJLtIZtV';
 const news = document.getElementById('news');
 const newsLeft = document.getElementById('news-col-left');
 const newsMiddle = document.getElementById('news-col-middle');

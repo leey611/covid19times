@@ -1,0 +1,23 @@
+{
+  "name": "covid19times",
+  "version": "1.0.0",
+  "description": "A simeple news site where Covid-19 news on different topics is collected.",
+  "main": "config.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leey611/covid19times.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leey611/covid19times/issues"
+  },
+  "homepage": "https://github.com/leey611/covid19times#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
